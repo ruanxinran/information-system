@@ -1,4 +1,4 @@
-<% @ Page Language='C#' AutoEventWireup="true"Codelife="show.aspx.cs">
+<%@ Page Language='C#' AutoEventWireup="true"Codelife="show.aspx.cs">
 
 <!DOCTYPE html>
 <head runat="server">
@@ -34,3 +34,23 @@
         <table witdh="100%" background="images/head_bg.jpg" style="width: 1314px; height: 63px">
             <tr><td  witdh="100%" align="center" ><p class="frontmodify" style="color: #FFFFFF; font-size: large">修改信息</p></td></tr>
         </table>
+        <br />
+    </div>
+        <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" Width="1318px" OnRowCommand="GridView2_RowCommand">
+            <Columns>
+                <asp:TemplateField HeaderText="学号"  ItemStyle-CssClass="textStyle"><ItemTemplate><%#Eval("stuNum") %></ItemTemplate></asp:TemplateField>
+                <asp:TemplateField HeaderText="姓名"  ItemStyle-CssClass="textStyle"><ItemTemplate><%#Eval("stuName") %></ItemTemplate></asp:TemplateField>
+                <asp:TemplateField HeaderText="性别"  ItemStyle-CssClass="textStyle"><ItemTemplate><%#Eval("stuSex") %></ItemTemplate></asp:TemplateField>
+                <asp:TemplateField HeaderText="身份证号码"  ItemStyle-CssClass="textStyle"><ItemTemplate><%#Eval("stuID") %></ItemTemplate></asp:TemplateField>
+                <asp:TemplateField HeaderText="民族"  ItemStyle-CssClass="textStyle"><ItemTemplate><%#Eval("stuNational") %></ItemTemplate></asp:TemplateField>
+                <asp:TemplateField HeaderText="电话"  ItemStyle-CssClass="textStyle"><ItemTemplate><%#Eval("stuTel") %></ItemTemplate></asp:TemplateField>
+                <asp:TemplateField HeaderText="学院"  ItemStyle-CssClass="textStyle"><ItemTemplate><%#Eval("stuCollege") %></ItemTemplate></asp:TemplateField>
+                <asp:TemplateField HeaderText="班级"  ItemStyle-CssClass="textStyle"><ItemTemplate><%#Eval("stuClass") %></ItemTemplate></asp:TemplateField>
+                <asp:TemplateField HeaderText="编辑"  ItemStyle-CssClass="textStyle">
+                      <ItemTemplate><asp:LinkButton ID="LinkButton1" runat="server" CommandArgument='<%# Eval("id")%>' CommandName="modify">提交变更请求</asp:LinkButton></ItemTemplate>
+                </asp:TemplateField>
+            </Columns>
+        </asp:GridView>
+    </form>
+</body>
+</html>
