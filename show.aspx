@@ -1,0 +1,1 @@
+<% @ Page Language='C#' AutoEventWireup="true"Codelife="show.aspx.cs">
