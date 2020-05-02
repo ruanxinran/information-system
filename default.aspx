@@ -38,7 +38,7 @@
                          <tr>
                              <td> <a href="Default.aspx">首页&nbsp;&nbsp;|&nbsp;&nbsp;</a> </td>
                              <td> <a href="admin/NewLogin.aspx">管理员登陆&nbsp;&nbsp;|&nbsp;&nbsp;</a> </td>
-                              <td> <a href="YNNU/Default.aspx"  target="_blank">师大首页&nbsp;&nbsp;|&nbsp;&nbsp;</a> </td>
+                              <td> <a href="YNNU/Default.aspx"  target="_blank">东大首页&nbsp;&nbsp;|&nbsp;&nbsp;</a> </td>
                              <td> <a href="#">English&nbsp;&nbsp;</a> </td>
                          </tr>
                      </table>
@@ -54,7 +54,7 @@
                 <td width="120px"> <img src="images/head_logo1.png" height="60px"/> </td>
                 <td width="650px">
                     <table>
-                    <tr><td class="front1">云南师范大学学生-教师基本信息查询系统</td></tr>
+                    <tr><td class="front1">东北大学学生-教师基本信息查询系统</td></tr>
                     <tr><td ><p class="front2"><b><i>Yunnan ShiFan DaXue Xuesheng-Jiaoshi Jiben Xinxi Chaxun Xitong</i></b></p></td></tr>
                   </table>
                 </td>
@@ -157,15 +157,6 @@
                 </td>
             </tr>
         </table>
-
-          <table class="footTable" >
-            <tr>
-                <td class="footTable">
-                    <div  class="footTable">© yangenneng  地址：昆明市呈贡区云南师范大学 邮编：650500</div>
-                </td>
-            </tr>
-        </table>
-
     </div>
     </form>
   
