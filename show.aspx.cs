@@ -20,7 +20,25 @@ public partial class Show:System.Web.UI.Page
         SqlConnection sqlcon = new SqlConnection(sqlconstr);
         
         if (objectValue =="学生"){
-
+            string selectSqlAll = "select * from studentInfo ";
+            string selectSqlSpecial = string.Empty;
+            if (wayValue.ToString() == "根据姓名查找")
+                selectSqlSpecial = "select * from studentInfo where stuName like '%" + keywordsValue + "%'";//模糊匹配
+            else if (wayValue.ToString() == "根据性别查找")
+                selectSqlSpecial = "select * from studentInfo where stuSex like '%" + keywordsValue + "%'";//模糊匹配
+            else if (wayValue.ToString() == "根据民族查找")
+                selectSqlSpecial = "select * from studentInfo where stuNational like '%" + keywordsValue + "%'";//模糊匹配
+            else if (wayValue.ToString() == "根据学院查找")
+                selectSqlSpecial = "select * from studentInfo where stuCollege like '%" + keywordsValue + "%'";//模糊匹配
+            else if (wayValue.ToString() == "根据专业查找")
+                selectSqlSpecial = "select * from studentInfo where stuClass like '%" + keywordsValue + "%'";//模糊匹配
+            else if (wayValue.ToString() == "根据学号查找")
+                selectSqlSpecial = "select * from studentInfo where stuNum like '%" + keywordsValue + "%'";//模糊匹配
+            
+            SqlDataAdapter da =new SqlDataAdapter(selectSqlAll,sqlcon);
+            SqlDataAdapter da2 = new SqlDataAdapter(selectSqlSpecial,sqlcon);
+            DataSet ds =new DataSet();
+            DataSet ds2 = new DataSet();
         }
     }
 }
