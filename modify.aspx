@@ -155,14 +155,6 @@
             <br /><br />
             </td></tr></table>
 
-         <table class="footTable" >
-            <tr>
-                <td class="footTable">
-                    <div  class="footTable">© yangenneng  地址：昆明市呈贡区云南师范大学 邮编：650500</div>
-                </td>
-            </tr>
-        </table>
-
     </form>
     </body>
 </html>
